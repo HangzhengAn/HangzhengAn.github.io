@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/featherlight.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
+	
+	<script src="js/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="js/featherlight.min.js"></script> 
+
+</head>
+<body>
+	<header id="top">
+		<div class="wrapper">
+			<h1 class="logo"><a href="#">Chase</a></h1>
+			<nav>
+				<ul id="navigation">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">Videos</a></li>
+					<li><a href="#services">PROFILE</a></li>
+					<li><a href="#experience">RELATED EXPERIENCE</a></li>
+					<li><a href="#academic">academic research</a></li>
+					
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section id="banner"><a name="home"></a>
+		<div class="wrapper">
+			<h2>Hangzheng An</h2>
+			<p class="subtitle">Nice to meet you.<br> My name is Hangzheng An.<br> I'm studying for a master's degree in robotics at the University of Manchester.</p>
+			<div class="buttons">
+				<a href="#" class="button-1">Learn More</a>
+				<a href="#" class="button-2">About Me</a>
+			</div>
+		</div>
+	</section>
+	
+	<section class="video-section"><a name="about"></a>	
+		<div class="wrapper">
+			<h3>Robotic Systems for SDGs</h3>
+			<p class="subtitle">Watch the video<br>and view my understanding of robots</p>
+			<video width="790" src="images/SDGs.mp4" poster="images/SDGs.mp4" onclick="this.play();" controls preload>
+				<p>Video playback unsupported</p>
+			</video>
+			<a href="#" class="button-1">Begin</a>
+		</div>
+	</section>
+	
+	<section class="services-section"><a name="services"></a>
+		<div class="wrapper">
+			<h3>Personal Profile</h3>
+			<p class="subtitle">What kind of person am I</p>
+			<ul class="services-list">
+				<li>
+					
+						<img src="images/personal_photo.jpg" alt="services icon" >
+					
+					
+					
+				</li>
+				<li>
+					
+					<h5>Self evaluation</h5>
+					<p>In my studies and work,I am a person who enjoys challenging myself and pursuing innovation.<br> <br>In daily life, I am friendly to people and enjoy making friends.<br><br> I always maintain a positive attitude towards all challenges and pressures, and I am not discouraged even if I fail! </p>
+					
+				</li>
+				<li>
+					
+					<h5>Skills Mastered</h5>
+					<p> Proficient in programming languages such as C, C++, R, Python, SQL, JavaScript, and HTML. <br><br>Master data science knowledge and methods such as crawling, data mining, data warehousing, data processing, data analysis, machine learning, and have crawled multiple large websites. <br><br>And proficient in the use of geographic information processing software such as ArcGis and Qgis.</p>
+					
+				</li>
+				<div class="clear"></div>	
+			</ul>
+		</div>
+	</section>
+
+	<section class="text-section"><a name="experience"></a>	
+		<div class="wrapper">
+			<div class="image align-left">
+				<img src="images/robocup.jpg" alt="light bulb" class="align-left">
+			</div>
+			<div class="text align-left">
+				<h3>Undergraduate related experience</h3>
+				<p class="subtitle">Participation in the Robot World Cup China Tournament</p>
+				<p>During my university years, I participated in the Robotics World Cup China tournament, and during this process, as a member of the technical team, I participated in the coding and model training of robots playing football.</p>
+				
+			</div>
+			<div class="clear"></div>	
+		</div>
+	</section>
+
+	
+	
+	<section class="text-section"><a name="academic"></a>	
+		<div class="wrapper">
+			<div class="image align-right">
+				<img src="images/recent_research.jpg" alt="light bulb" class="align-left" style="margin-top: 60px;">
+			</div>
+			<div class="text align-right">
+				<h3>Undergraduate academic research</h3>
+				<p class="subtitle">Analysis of the Distribution Relationship between Urban Fitness Space and Infrastructure Based on XgBoosts and SHAP</p>
+				<p>Taking Shanghai as an example, after crawling POI (Point of Interest) data using a crawler, the data is imported into ArcGis for kernel density analysis, grid processing, city boundary clipping, projection transformation, and coordinate correction. After training the model using XGBoost, SHAP (Shapley Additive exPlanning) is used to explain the model. </p>
+				
+			</div>
+			<div class="clear"></div>	
+		</div>
+	</section>
+
+	<section class="email-list-section">
+		<h3>Contact me</h3>
+		<p class="subtitle">You can find my email and phone number below</p>
+		<form>
+			<input type="text" value="044 7775 860 639">
+			<input type="text" value="591412997@qq.com">
+			<button type="submit" title="Submit">Contact me!</button>
+		</form>
+	</section>
+	
+	
+	<footer>
+		<div class="wrapper">
+			<a class="logo" href="#">Chase</a>
+			
+		</div>
+	</footer>
+</body>
+</html>
