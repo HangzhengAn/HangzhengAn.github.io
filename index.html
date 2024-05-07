@@ -28,6 +28,10 @@
         img, video {
             max-width: 100%;
         }
+        .personal-photo {
+            width: 650px; /* 增大尺寸 */
+            height: auto;
+        }
         .contact-links {
             text-align: center;
             margin-top: 10px;
@@ -35,18 +39,21 @@
         }
         .contact-links a {
             display: inline-block;
-            width: 30%;
+            width: 20%; /* 调整宽度以容纳 GitHub 链接 */
             position: absolute;
             text-align: center;
-            color: white; /* Set the color of links to white */
+            color: white; /* 设置链接颜色为白色 */
             text-decoration: none;
             font-weight: bold;
         }
         .contact-links a.linkedin {
-            left: 16.66%; /* Position the 'My LinkedIn Profile' link at 1/3 width */
+            left: 16.66%; /* 1/4 宽度处的 LinkedIn 链接 */
+        }
+        .contact-links a.github {
+            left: 41.66%; /* 2/4 宽度处的 GitHub 链接 */
         }
         .contact-links a.email {
-            right: 16.66%; /* Position the 'Email me' link at 2/3 width */
+            right: 16.66%; /* 3/4 宽度处的 Email 链接 */
         }
         .contact-links a:hover {
             text-decoration: underline;
@@ -84,7 +91,7 @@
             <h3>Robotic Systems for SDGs</h3>
             <p class="subtitle">Watch the video<br>and view my understanding of robots</p>
             <video width="790" src="images/SDGs.mp4" poster="images/SDGs.mp4" onclick="this.play();" controls preload>
-                <p>Video plaSyback unsupported</p>
+                <p>Video playback unsupported</p>
             </video>
         </div>
     </section>
@@ -95,15 +102,15 @@
             <p class="subtitle">What kind of person am I</p>
             <ul class="services-list">
                 <li>
-                    <img src="images/personal_photo.jpg" alt="services icon">
+                    <img src="images/personal_photo.jpg" alt="personal photo" class="personal-photo">
                 </li>
                 <li>
                     <h5>Self evaluation</h5>
-                    <p>I completed my undergraduate studies in Data Science and Big Data Technology, and I am currently pursuing a master's degree in Robotics.<br><br>I am very interested in the fields of machine learning and robotic cognition. I enjoy exploring and contemplating the boundaries between robots and humans, and investigating how machine learning can simulate human thought processes. My future research goal is in machine learning, particularly in the field of CNN (Convolutional Neural Networks), as I believe this area has great potential for development. It can provide more possibilities for the advancement of robotics, which is something I am deeply passionate about. I am willing to dedicate a significant amount of my free time to thinking and exploring in this field.</p>
+                    <p>I completed my undergraduate studies in Data Science and Big Data Technology, and I am currently pursuing a master's degree in Robotics.<br><br>I am very interested in the fields of machine learning and robotic cognition. I enjoy exploring and contemplating the boundaries between robots and humans, and investigating how machine learning can simulate human thought processes. My future research goal is in machine learning, particularly in the field of CNN (Convolutional Neural Networks), as I believe this area has great potential for development. It can provide more possibilities for the advancement of robotics, which is something I am deeply passionate about. I am willing to dedicate a significant amount of my free time to thinking and exploring in this field。</p>
                 </li>
                 <li>
                     <h5>Skills Mastered</h5>
-                    <p> Proficient in programming languages such as <strong>C, C++, R, Python, SQL, JavaScript, ROS2 and HTML</strong>. <br><br>Master data science knowledge and methods such as <strong>crawling, data mining, data warehousing, data processing, data analysis, machine learning,</strong> and have crawled multiple large websites. <br><br>I possess a wide range of skills in the field of robotics, including <strong>programming, machine learning, sensor application, motion control, human-machine interaction, and safety reliability</strong>. I am capable of writing robot control programs, implementing machine learning algorithms for intelligent decision-making, processing sensor data for environmental perception, designing mechanical structures and components, optimizing algorithms to enhance robot performance, and ensuring the safety and reliability of robot operations. These skills enable me to provide comprehensive technical support and solutions for the development and application of robots.</p>
+                    <p> Proficient in programming languages such as <strong>C, C++, R, Python, SQL, JavaScript, ROS2 and HTML</strong>. <br><br>Master data science knowledge and methods such as <strong>crawling, data mining, data warehousing, data processing, data analysis, machine learning,</strong> and have crawled multiple large websites. <br><br>I possess a wide range of skills in the field of robotics, including <strong>programming, machine learning, sensor application, motion control, human-machine interaction, and safety reliability</strong>. I am capable of writing robot control programs, implementing machine learning algorithms for intelligent decision-making, processing sensor data for environmental perception, designing mechanical structures and components, optimizing algorithms to enhance robot performance, and ensuring the safety and reliability of robot operations. These skills enable me to provide comprehensive technical support and solutions for the development and application of robots。</p>
                 </li>
                 <div class="clear"></div> 
             </ul>
@@ -113,12 +120,12 @@
     <section class="text-section"><a name="undergradate"></a>   
         <div class="wrapper">
             <div class="image align-left">
-                <img src="images/robocup.jpg" alt="light bulb" class="align-left">
+                <img src="images/robocup.jpg" alt="RoboCup China Tournament" class="align-left">
             </div>
             <div class="text align-left">
                 <h3 style="font-size: 20px;">Undergraduate related experience</h3>
                 <p class="subtitle">Participation in the Robot World Cup China Tournament</p>
-                <p>The RoboCup, a highly influential and technologically advanced robotics competition in the field of world robot competitions, was proposed by Professor Alan Mackworth of the University of British Columbia, Canada, in 1992. Its purpose is to provide a landmark and challenging topic for the development of artificial intelligence and intelligent robotics disciplines through robot soccer matches.<br><br>During my university years, I participated in the RoboCup China tournament, where I served as a member of the technical team. My main responsibility was conducting training for soccer robot models. This involved adjusting parameters and optimizing methods to facilitate effective coordination among the soccer robots.</p>
+                <p>The RoboCup, a highly influential and technologically advanced robotics competition in the field of world robot competitions, was proposed by Professor Alan Mackworth of the University of British Columbia, Canada, in 1992. Its purpose is to provide a landmark and challenging topic for the development of artificial intelligence and intelligent robotics disciplines through robot soccer matches.<br><br>During my university years, I participated in the RoboCup China tournament, where I served as a member of the technical team. My main responsibility was conducting training for soccer robot models. This involved adjusting parameters and optimizing methods to facilitate effective coordination among the soccer robots。</p>
             </div>
             <div class="clear"></div>  
         </div>
@@ -127,12 +134,12 @@
     <section class="text-section">  
         <div class="wrapper">
             <div class="image align-right">
-                <img src="images/recent_research.jpg" alt="light bulb" class="align-left" style="margin-top: 60px;">
+                <img src="images/recent_research.jpg" alt="Academic Research" class="align-left" style="margin-top: 60px;">
             </div>
             <div class="text align-left">
                 <h3 style="font-size: 20px;">Undergraduate academic research</h3>
                 <p class="subtitle">Analysis of the Relationship between Gym Distribution and Infrastructure Based on XGBoost and SHAP</p>
-                <p>Using Shanghai as an example, after crawling Point of Interest (POI) data with a web crawler, the data is imported into ArcGIS for kernel density analysis, grid processing, city boundary clipping, projection transformation, and coordinate correction. After training the model using XGBoost, SHAP (Shapley Additive exPlanning) is utilized to interpret the model. This allows for the interpretation of the distribution of gyms in the city and analysis of which parts of the infrastructure have the greatest impact on gym distribution</p>
+                <p>Using Shanghai as an example, after crawling Point of Interest (POI) data with a web crawler, the data is imported into ArcGIS for kernel density analysis, grid processing, city boundary clipping, projection transformation, and coordinate correction. After training the model using XGBoost, SHAP (Shapley Additive exPlanning) is utilized to interpret the model. This allows for the interpretation of the distribution of gyms in the city and analysis of which parts of the infrastructure have the greatest impact on gym distribution。</p>
             </div>
             <div class="clear"></div>  
         </div>
@@ -145,23 +152,22 @@
                     <p>Video playback unsupported</p>
                 </video>
             </div>
-            <div class="text align-left">
-                <h3 style="font-size: 20px;">Master's Project experience</h3>
-                <p class="subtitle"> Completion of the Autonomous Mobile Robot project, a team collaboration that resulted in a mobile robot capable of autonomous movement and grasping. </p>
-                <p> Once the robot identifies an object, it automatically navigates to the target location, where a robotic arm accomplishes the autonomous grasping and placement of the object. The main components of the robot include a LeoRover vehicle and a mechanical arm. My primary role involved the recognition of objects suitable for grasping, and the transformation and transmission of their 3D coordinates. The main machine learning recognition method used was YOLO v5.</p><p>You can find the full project on GitHub here: <a href="https://github.com/Team8RoboticsUOM/Team8_Mobile_Grasping_Robot" target="_blank">Team8 Mobile Grasping Robot</a>.</p>
-
+            <div class="text align-right">
+                <h3 style="font-size: 20px;">Master's Project Experience</h3>
+                <p class="subtitle">Completion of the Autonomous Mobile Robot project, a team collaboration that resulted in a mobile robot capable of autonomous movement and grasping。</p>
+                <p>Once the robot identifies an object, it automatically navigates to the target location, where a robotic arm accomplishes the autonomous grasping and placement of the object. The main components of the robot include a LeoRover vehicle and a mechanical arm. My primary role involved the recognition of objects suitable for grasping, and the transformation and transmission of their 3D coordinates. The main machine learning recognition method used was YOLO v5。</p>
+                <p>You can find the full project on GitHub here: <a href="https://github.com/Team8RoboticsUOM/Team8_Mobile_Grasping_Robot" target="_blank">Team8 Mobile Grasping Robot</a>.</p>
             </div>
             <div class="clear"></div>  
         </div>
     </section>
 
-
     <section class="text-section"><a name="floor-cleaning-robot"></a>   
         <div class="wrapper">
             <div class="text align-left">
                 <h3 style="font-size: 20px;">Master's Study Experience</h3>
-                <p class="subtitle">Development of a virtual version of a floor-cleaning robot.</p>
-                <p>During my master's studies, I developed a virtual version of a floor-cleaning robot equipped with radar, a depth camera, odometry, and IMU based on specific requirements. The robot can perform differential motion, accept multiple command inputs, but only outputs a single twist message, prioritizing user input.</p>
+                <p class="subtitle">Development of a virtual version of a floor-cleaning robot。</p>
+                <p>During my master's studies, I developed a virtual version of a floor-cleaning robot equipped with radar, a depth camera, odometry, and IMU based on specific requirements. The robot can perform differential motion, accept multiple command inputs, but only outputs a single twist message, prioritizing user input。</p>
             </div>
             <div class="video align-right">
                 <video width="600" src="images/clear_1.mp4" poster="images/clear_1.mp4" onclick="this.play();" controls preload>
@@ -172,12 +178,26 @@
         </div>
     </section>
 
+    <section class="text-section">  
+        <div class="wrapper">
+            <div class="image align-left">
+                <img src="images/cnncv.jpg" alt="Academic Research" class="align-left">
+            </div>
+            <div class="text align-left">
+                <h3 style="font-size: 20px;">Master's ACADEMIC RESEARCH</h3>
+                <p class="subtitle">Research on the Differences and Comparative Study between Deep Neural Network Methods and Traditional Computer Vision Algorithms</p>
+                <p>This study uses the CIFAR-10 dataset and compares the advantages and disadvantages of two approaches: a traditional computer vision method based on SIFT feature extraction, bag-of-words model construction, and SVM classifier, and a three-layer convolutional neural network method. On the CIFAR-10 dataset, the training accuracy of the deep learning model is significantly superior to that of traditional computer vision methods. This performance advantage is mainly attributed to its feature learning capability, end-to-end training, and data augmentation. However, deep learning methods have the following drawbacks: high computational resource requirements, data demands, and lack of interpretability。</p>
+            </div>
+            <div class="clear"></div>  
+        </div>
+    </section>
 
     <section class="email-list-section">
         <h3>Contact me</h3>
-        <p class="subtitle">You can find my LinkedIn and email below!</p>
+        <p class="subtitle">You can find my LinkedIn, GitHub, and email below!</p>
         <div class="contact-links">
             <a href="https://www.linkedin.com/in/hangzheng-an-571061293/" target="_blank" class="linkedin">My LinkedIn Profile</a>
+            <a href="https://github.com/HangzhengAn" target="_blank" class="github">My GitHub</a>
             <a href="mailto:591412997@qq.com" class="email">Email me</a>
         </div>
     </section>
