@@ -1,133 +1,191 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Home</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/featherlight.min.css">
-	<link href='https://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
-	
-	<script src="js/jquery-latest.min.js"></script>
-	<script type="text/javascript" src="js/featherlight.min.js"></script> 
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/featherlight.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
 
+    <script src="js/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="js/featherlight.min.js"></script> 
+    <style>
+        .wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .align-left {
+            float: left;
+        }
+        .align-right {
+            float: right;
+        }
+        .clear {
+            clear: both;
+        }
+        img, video {
+            max-width: 100%;
+        }
+        .contact-links {
+            text-align: center;
+            margin-top: 10px;
+            position: relative;
+        }
+        .contact-links a {
+            display: inline-block;
+            width: 30%;
+            position: absolute;
+            text-align: center;
+            color: white; /* Set the color of links to white */
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contact-links a.linkedin {
+            left: 16.66%; /* Position the 'My LinkedIn Profile' link at 1/3 width */
+        }
+        .contact-links a.email {
+            right: 16.66%; /* Position the 'Email me' link at 2/3 width */
+        }
+        .contact-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-	<header id="top">
-		<div class="wrapper">
-			<h1 class="logo"><a href="#">Chase</a></h1>
-			<nav>
-				<ul id="navigation">
-					<li><a href="#home">Home</a></li>
-					<li><a href="#about">Videos</a></li>
-					<li><a href="#services">PROFILE</a></li>
-					<li><a href="#experience">RELATED EXPERIENCE</a></li>
-					<li><a href="#academic">academic research</a></li>
-					
-				</ul>
-			</nav>
-		</div>
-	</header>
-	<section id="banner"><a name="home"></a>
-		<div class="wrapper">
-			<h2>Hangzheng An</h2>
-			<p class="subtitle">Nice to meet you.<br> My name is Hangzheng An.<br> I'm studying for a master's degree in robotics at the University of Manchester.</p>
-			<div class="buttons">
-				<a href="#" class="button-1">Learn More</a>
-				<a href="#" class="button-2">About Me</a>
-			</div>
-		</div>
-	</section>
-	
-	<section class="video-section"><a name="about"></a>	
-		<div class="wrapper">
-			<h3>Robotic Systems for SDGs</h3>
-			<p class="subtitle">Watch the video<br>and view my understanding of robots</p>
-			<video width="790" src="images/SDGs.mp4" poster="images/SDGs.mp4" onclick="this.play();" controls preload>
-				<p>Video playback unsupported</p>
-			</video>
-			<a href="#" class="button-1">Begin</a>
-		</div>
-	</section>
-	
-	<section class="services-section"><a name="services"></a>
-		<div class="wrapper">
-			<h3>Personal Profile</h3>
-			<p class="subtitle">What kind of person am I</p>
-			<ul class="services-list">
-				<li>
-					
-						<img src="images/personal_photo.jpg" alt="services icon" >
-					
-					
-					
-				</li>
-				<li>
-					
-					<h5>Self evaluation</h5>
-					<p>In my studies and work,I am a person who enjoys challenging myself and pursuing innovation.<br> <br>In daily life, I am friendly to people and enjoy making friends.<br><br> I always maintain a positive attitude towards all challenges and pressures, and I am not discouraged even if I fail! </p>
-					
-				</li>
-				<li>
-					
-					<h5>Skills Mastered</h5>
-					<p> Proficient in programming languages such as C, C++, R, Python, SQL, JavaScript, and HTML. <br><br>Master data science knowledge and methods such as crawling, data mining, data warehousing, data processing, data analysis, machine learning, and have crawled multiple large websites. <br><br>And proficient in the use of geographic information processing software such as ArcGis and Qgis.</p>
-					
-				</li>
-				<div class="clear"></div>	
-			</ul>
-		</div>
-	</section>
+    <header id="top">
+        <div class="wrapper">
+            <h1 class="logo"><a href="#">Chase</a></h1>
+            <nav>
+                <ul id="navigation">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">SDGS</a></li>
+                    <li><a href="#services">PROFILE</a></li>
+                    <li><a href="#undergradate">UNDERGRADATE</a></li>
+                    <li><a href="#postgradate">POSTGRADATE</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="banner"><a name="home"></a>
+        <div class="wrapper">
+            <h2>Hangzheng An</h2>
+            <p class="subtitle">Nice to meet you.<br> My name is Hangzheng An.<br> I'm studying for a master's degree in robotics at the University of Manchester.</p>
+            <div class="buttons">
+                <a href="#" class="button-1">Learn More</a>
+                <a href="#" class="button-2">About Me</a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="video-section"><a name="about"></a>  
+        <div class="wrapper">
+            <h3>Robotic Systems for SDGs</h3>
+            <p class="subtitle">Watch the video<br>and view my understanding of robots</p>
+            <video width="790" src="images/SDGs.mp4" poster="images/SDGs.mp4" onclick="this.play();" controls preload>
+                <p>Video plaSyback unsupported</p>
+            </video>
+        </div>
+    </section>
+    
+    <section class="services-section"><a name="services"></a>
+        <div class="wrapper">
+            <h3>Personal Profile</h3>
+            <p class="subtitle">What kind of person am I</p>
+            <ul class="services-list">
+                <li>
+                    <img src="images/personal_photo.jpg" alt="services icon">
+                </li>
+                <li>
+                    <h5>Self evaluation</h5>
+                    <p>I completed my undergraduate studies in Data Science and Big Data Technology, and I am currently pursuing a master's degree in Robotics.<br><br>I am very interested in the fields of machine learning and robotic cognition. I enjoy exploring and contemplating the boundaries between robots and humans, and investigating how machine learning can simulate human thought processes. My future research goal is in machine learning, particularly in the field of CNN (Convolutional Neural Networks), as I believe this area has great potential for development. It can provide more possibilities for the advancement of robotics, which is something I am deeply passionate about. I am willing to dedicate a significant amount of my free time to thinking and exploring in this field.</p>
+                </li>
+                <li>
+                    <h5>Skills Mastered</h5>
+                    <p> Proficient in programming languages such as <strong>C, C++, R, Python, SQL, JavaScript, ROS2 and HTML</strong>. <br><br>Master data science knowledge and methods such as <strong>crawling, data mining, data warehousing, data processing, data analysis, machine learning,</strong> and have crawled multiple large websites. <br><br>I possess a wide range of skills in the field of robotics, including <strong>programming, machine learning, sensor application, motion control, human-machine interaction, and safety reliability</strong>. I am capable of writing robot control programs, implementing machine learning algorithms for intelligent decision-making, processing sensor data for environmental perception, designing mechanical structures and components, optimizing algorithms to enhance robot performance, and ensuring the safety and reliability of robot operations. These skills enable me to provide comprehensive technical support and solutions for the development and application of robots.</p>
+                </li>
+                <div class="clear"></div> 
+            </ul>
+        </div>
+    </section>
 
-	<section class="text-section"><a name="experience"></a>	
-		<div class="wrapper">
-			<div class="image align-left">
-				<img src="images/robocup.jpg" alt="light bulb" class="align-left">
-			</div>
-			<div class="text align-left">
-				<h3>Undergraduate related experience</h3>
-				<p class="subtitle">Participation in the Robot World Cup China Tournament</p>
-				<p>During my university years, I participated in the Robotics World Cup China tournament, and during this process, as a member of the technical team, I participated in the coding and model training of robots playing football.</p>
-				
-			</div>
-			<div class="clear"></div>	
-		</div>
-	</section>
+    <section class="text-section"><a name="undergradate"></a>   
+        <div class="wrapper">
+            <div class="image align-left">
+                <img src="images/robocup.jpg" alt="light bulb" class="align-left">
+            </div>
+            <div class="text align-left">
+                <h3 style="font-size: 20px;">Undergraduate related experience</h3>
+                <p class="subtitle">Participation in the Robot World Cup China Tournament</p>
+                <p>The RoboCup, a highly influential and technologically advanced robotics competition in the field of world robot competitions, was proposed by Professor Alan Mackworth of the University of British Columbia, Canada, in 1992. Its purpose is to provide a landmark and challenging topic for the development of artificial intelligence and intelligent robotics disciplines through robot soccer matches.<br><br>During my university years, I participated in the RoboCup China tournament, where I served as a member of the technical team. My main responsibility was conducting training for soccer robot models. This involved adjusting parameters and optimizing methods to facilitate effective coordination among the soccer robots.</p>
+            </div>
+            <div class="clear"></div>  
+        </div>
+    </section>
 
-	
-	
-	<section class="text-section"><a name="academic"></a>	
-		<div class="wrapper">
-			<div class="image align-right">
-				<img src="images/recent_research.jpg" alt="light bulb" class="align-left" style="margin-top: 60px;">
-			</div>
-			<div class="text align-right">
-				<h3>Undergraduate academic research</h3>
-				<p class="subtitle">Analysis of the Distribution Relationship between Urban Fitness Space and Infrastructure Based on XgBoosts and SHAP</p>
-				<p>Taking Shanghai as an example, after crawling POI (Point of Interest) data using a crawler, the data is imported into ArcGis for kernel density analysis, grid processing, city boundary clipping, projection transformation, and coordinate correction. After training the model using XGBoost, SHAP (Shapley Additive exPlanning) is used to explain the model. </p>
-				
-			</div>
-			<div class="clear"></div>	
-		</div>
-	</section>
+    <section class="text-section">  
+        <div class="wrapper">
+            <div class="image align-right">
+                <img src="images/recent_research.jpg" alt="light bulb" class="align-left" style="margin-top: 60px;">
+            </div>
+            <div class="text align-left">
+                <h3 style="font-size: 20px;">Undergraduate academic research</h3>
+                <p class="subtitle">Analysis of the Relationship between Gym Distribution and Infrastructure Based on XGBoost and SHAP</p>
+                <p>Using Shanghai as an example, after crawling Point of Interest (POI) data with a web crawler, the data is imported into ArcGIS for kernel density analysis, grid processing, city boundary clipping, projection transformation, and coordinate correction. After training the model using XGBoost, SHAP (Shapley Additive exPlanning) is utilized to interpret the model. This allows for the interpretation of the distribution of gyms in the city and analysis of which parts of the infrastructure have the greatest impact on gym distribution</p>
+            </div>
+            <div class="clear"></div>  
+        </div>
+    </section>
 
-	<section class="email-list-section">
-		<h3>Contact me</h3>
-		<p class="subtitle">You can find my email and phone number below</p>
-		<form>
-			<input type="text" value="044 7775 860 639">
-			<input type="text" value="591412997@qq.com">
-			<button type="submit" title="Submit">Contact me!</button>
-		</form>
-	</section>
-	
-	
-	<footer>
-		<div class="wrapper">
-			<a class="logo" href="#">Chase</a>
-			
-		</div>
-	</footer>
+    <section class="text-section"><a name="postgradate"></a>   
+        <div class="wrapper">
+            <div class="video align-left">
+                <video width="600" src="images/project.mp4" poster="images/project.mp4" onclick="this.play();" controls preload>
+                    <p>Video playback unsupported</p>
+                </video>
+            </div>
+            <div class="text align-left">
+                <h3 style="font-size: 20px;">Master's Project experience</h3>
+                <p class="subtitle"> Completion of the Autonomous Mobile Robot project, a team collaboration that resulted in a mobile robot capable of autonomous movement and grasping. </p>
+                <p> Once the robot identifies an object, it automatically navigates to the target location, where a robotic arm accomplishes the autonomous grasping and placement of the object. The main components of the robot include a LeoRover vehicle and a mechanical arm. My primary role involved the recognition of objects suitable for grasping, and the transformation and transmission of their 3D coordinates. The main machine learning recognition method used was YOLO v5.</p><p>You can find the full project on GitHub here: <a href="https://github.com/Team8RoboticsUOM/Team8_Mobile_Grasping_Robot" target="_blank">Team8 Mobile Grasping Robot</a>.</p>
+
+            </div>
+            <div class="clear"></div>  
+        </div>
+    </section>
+
+
+    <section class="text-section"><a name="floor-cleaning-robot"></a>   
+        <div class="wrapper">
+            <div class="text align-left">
+                <h3 style="font-size: 20px;">Master's Study Experience</h3>
+                <p class="subtitle">Development of a virtual version of a floor-cleaning robot.</p>
+                <p>During my master's studies, I developed a virtual version of a floor-cleaning robot equipped with radar, a depth camera, odometry, and IMU based on specific requirements. The robot can perform differential motion, accept multiple command inputs, but only outputs a single twist message, prioritizing user input.</p>
+            </div>
+            <div class="video align-right">
+                <video width="600" src="images/clear_1.mp4" poster="images/clear_1.mp4" onclick="this.play();" controls preload>
+                    <p>Video playback unsupported</p>
+                </video>
+            </div>
+            <div class="clear"></div>  
+        </div>
+    </section>
+
+
+    <section class="email-list-section">
+        <h3>Contact me</h3>
+        <p class="subtitle">You can find my LinkedIn and email below!</p>
+        <div class="contact-links">
+            <a href="https://www.linkedin.com/in/hangzheng-an-571061293/" target="_blank" class="linkedin">My LinkedIn Profile</a>
+            <a href="mailto:591412997@qq.com" class="email">Email me</a>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="wrapper">
+            <a class="logo" href="#">Chase</a>
+        </div>
+    </footer>
 </body>
 </html>
